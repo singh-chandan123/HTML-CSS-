@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    background-color: aquamarine;
+border: 3px solid black;
+margin: 2px;
+padding: 2px;
+display: flex;
+}
+.box{
+height: 300px;
+width: 300px;
+border: 1px solid red;
+margin: 2px;
+padding: 2px;
+}
+#id1{
+background-color: blueviolet;
+}
+#id2{
+background-color: rgb(170, 210, 95);
+}
+#id3{
+background-color: rgb(48, 217, 250);
+}
+#id4{
+background-color: rgb(206, 25, 133);
+}
+@media (min-width:640px){
+  .container{
+    flex-direction: row;
+  }
+}
+@media (max-width:640px){
+  .container{
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="id1">chandan</div>
+        <div class="box" id="id2"> singh</div>
+        <div class="box" id="id3">thakur </div>
+        <div class="box" id="id4">hai</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Engaging  Animation by CSS</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color: beige;
+        height: 100vh;
+        width: 100vw;
+border: 4px solid black;
+box-sizing: border-box;
+    }
+    .box{
+        background-color: aqua;
+width: 250px;
+height: 50px;
+border: 2px solid red;
+margin: 5px;
+padding: 2px;
+border-radius: 10px;
+position: relative;
+animation-name: rectangleball;
+animation-duration: 5s;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: both;
+    }
+    @keyframes rectangleball {
+        from{
+top:0;
+left:0;
+        }
+        to{
+top:0;
+left:1200px;
+        }
+    }
+    .box1{
+        background-color: aqua;
+width: 250px;
+height: 50px;
+border: 2px solid red;
+margin: 8px;
+padding: 2px;
+border-radius: 10px;
+position: relative;
+animation-name: rectanglebigball;
+animation-duration: 5s;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: none;
+    }
+    @keyframes rectanglebigball {
+        from{
+top:480px;
+left:1200px;
+        }
+        to{
+top:480px;
+left:0;
+        }
+    }
+    .circle{
+        background-color: aqua;
+width: 75px;
+height: 70px;
+border: 2px solid red;
+margin: 5px;
+padding: 2px;
+border-radius: 50px;
+position: relative; 
+top: 30%;
+left: 40%;
+animation-name: circleball;
+animation-duration: 5s;
+animation-delay: 2s;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: none;
+    }
+    @keyframes circleball {
+       0%{
+top: 0.5%;
+left: 2%;
+       } 
+       35%{
+        top: 2%;
+left: 90%;
+       }
+       65%{
+        top: 70%;
+left: 3%;
+       }
+       100%{
+        top: 75%;
+left: 90%;
+       }
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+    Rectangular Box 1
+</div>
+<div class="circle">
+</div>
+<div class="box1">
+    Rectangular Box 2
+</div>
+    </div>
+</body>
+</html>
